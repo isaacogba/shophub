@@ -1,7 +1,7 @@
 import React from 'react'
-import { getProducts } from '../data/Product'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
+import { getProducts } from '../data/product'
 
 const Home = () => {
   const products = getProducts()

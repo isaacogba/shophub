@@ -12,7 +12,7 @@ const Navbar = () => {
         <h1 className="shop-brand">Shophub</h1>
         <div className="navbar-link">
           <Link to='/' className="navbar-links">Home</Link>
-          <Link to='/cart' className="navbar-links">Cart</Link>
+          <Link to='/checkout' className="navbar-links">Cart</Link>
         </div>
         
         { !user ? (
@@ -22,7 +22,6 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="navbar-user">
-            {/* 2. Fix the spelling to 'email' */}
             <span className="navbar-greeting">Hello {user.email}</span>
             <button className="btn btn-secondary" onClick={() => logout()}>
               Logout

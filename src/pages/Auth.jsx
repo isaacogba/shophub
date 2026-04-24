@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const Auth = () => {
 const [mode, setMode] = useState("signup") 
 const [error ,setError ] =  useState(null)
-const { signUp , user,login, logout} = useAuth()
+const { signUp ,login, logout} = useAuth()
 const navigate = useNavigate()
 
 
@@ -35,9 +35,7 @@ function onSubmit(data){
     <div className='page'>
       <div className='container'>
         <div className='auth-container'>
-         
-          {user && <p>user is logged in : {user.email} </p> }
-         <h1 className='page-title'>
+           <h1 className='page-title'>
           {mode === "signup" ? 'sign-up' : 'login'}
          </h1>
 
